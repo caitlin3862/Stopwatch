@@ -10,12 +10,12 @@
     tools:context=".MainActivity" >
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/timeDisplayed"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
         android:gravity="center"
-        android:text="00:00.0"
+        android:text="@string/resetTime"
         android:textSize="90sp" />
 
     <LinearLayout
@@ -28,7 +28,7 @@
         android:orientation="horizontal">
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/play"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -36,10 +36,10 @@
             android:background="@android:color/transparent"
             android:scaleX="0.9"
             android:scaleY="0.9"
-            tools:srcCompat="@drawable/playblue" />
+            android:src="@drawable/playselector" />
 
         <ImageButton
-            android:id="@+id/imageButton3"
+            android:id="@+id/pause"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -47,17 +47,17 @@
             android:background="@android:color/transparent"
             android:scaleX="0.9"
             android:scaleY="0.9"
-            tools:srcCompat="@drawable/pauseblue" />
+            android:src="@drawable/pauseselector" />
 
         <ImageButton
-            android:id="@+id/imageButton4"
+            android:id="@+id/reset"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="@android:color/transparent"
             android:scaleX="0.9"
             android:scaleY="0.9"
-            tools:srcCompat="@drawable/resetblue" />
+            android:src="@drawable/resetselector" />
 
     </LinearLayout>
 
